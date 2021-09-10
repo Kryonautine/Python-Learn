@@ -48,22 +48,8 @@ matrixSum = matrixAdd(order,matrix1,matrix2)
 
 # Displaying the matrices and their sum
 
-for i in range(order):
-    for j in range(order):
-        print(matrix1[i][j], " ", end="")
-    print()
-
+matrixDisplay(order,matrix1)
 print(" + ")
-
-for i in range(order):
-    for j in range(order):
-        print(matrix2[i][j], " ", end="")
-    print()
-
+matrixDisplay(order,matrix2)
 print(" = ")
-
-for i in range(order):
-    for j in range(order):
-        print(matrixSum[i][j], " ", end="")
-    print()
-
+matrixDisplay(order,matrixSum)
