@@ -26,12 +26,13 @@ class Student:
 
 if __name__ == "__main__":
 
-    # Creating an array to store details of 5 students
+    # Creating an array to store details of given number of students
     totstudent = []
-    for i in range(5):
+    num = int(input("Enter number of students you wish to add : "))
+    for i in range(num):
         var = Student()
         totstudent.append(var)
 
     # Displaying the details of each student
-    for i in range(5):
+    for i in range(num):
         totstudent[i].getStdDetail()
